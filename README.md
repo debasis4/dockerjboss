@@ -10,5 +10,5 @@ echo "Completed image build for Wezva CICD ..."
   BASEIMAGE="jboss/base-jdk:11"
   BuildImage="wildfly"
 
-* Source Code Management, git repo as "https://gitlab.com/scmlearningcentre/demo.git"
+* Source Code Management, git repo as "https://gitlab.com/debasis4/docker-jboss.git"
 * Build when a change is pushed to GitLab under "Build Triggers"
