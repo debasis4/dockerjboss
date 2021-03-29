@@ -24,7 +24,7 @@ build_image()
 push_image()
 {
     log "INFO: Login to the docker registry"
-        /usr/bin/docker login -u adamtravis -p $paswd
+        /usr/bin/docker login -u debasis4 -p $ashikhunk143
 
         if [ $? -ne "0" ]; then
         log "ERROR: Docker registry login failed"
@@ -34,8 +34,8 @@ push_image()
     fi
 
         log "INFO: Starting to push image to the repository"
-    /usr/bin/docker tag ${Build_Img} adamtravis/${Build_Img}
-    /usr/bin/docker push adamtravis/${Build_Img}
+    /usr/bin/docker tag ${Build_Img} debasis4/${Build_Img}
+    /usr/bin/docker push debasis4/${Build_Img}
 
     if [ $? -ne "0" ]; then
         log "ERROR: Docker Push command failed"
