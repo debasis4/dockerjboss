@@ -24,7 +24,7 @@ build_image()
 push_image()
 {
     log "INFO: Login to the docker registry"
-        /usr/bin/docker login --username=$debasis4 --password=$ashikhunk143 $debasisroutray4@gmail.com
+        /usr/bin/docker login -u $debasis4 -p $ashikhunk143 docker login -u -m $debasis4@gmail.com $DOCKER_HOST 
 
         if [ $? -ne "0" ]; then
         log "ERROR: Docker registry login failed"
