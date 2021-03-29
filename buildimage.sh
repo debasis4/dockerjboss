@@ -24,7 +24,7 @@ build_image()
 push_image()
 {
     log "INFO: Login to the docker registry"
-        /usr/bin/docker login -u debasis4 -p $paswsd
+        /usr/bin/docker login -u debasis4 -p $paswd
 
         if [ $? -ne "0" ]; then
         log "ERROR: Docker registry login failed"
