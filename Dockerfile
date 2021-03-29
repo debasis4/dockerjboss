@@ -9,8 +9,8 @@ ENV JBOSS_HOME /opt/jboss/wildfly
 
 USER root
 
-RUN mkdir /var/log/wezva
-RUN chown jboss:jboss /var/log/wezva
+RUN mkdir /var/log/ashik
+RUN chown jboss:jboss /var/log/ashik
 
 # Add the WildFly distribution to /opt, and make wildfly the owner of the extracted tar content
 RUN cd $HOME \
